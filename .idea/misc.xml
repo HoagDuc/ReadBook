@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/APPSach/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.17222222222222222" />
+        <entry key="..\:/APPSach/app/src/main/res/drawable/ic_baseline_arrow_downward.xml" value="0.18489583333333334" />
+        <entry key="..\:/APPSach/app/src/main/res/drawable/ic_baseline_auto_awesome_24.xml" value="0.17222222222222222" />
+        <entry key="..\:/APPSach/app/src/main/res/drawable/ic_baseline_format.xml" value="0.18489583333333334" />
+        <entry key="..\:/APPSach/app/src/main/res/drawable/ic_baseline_get_app.xml" value="0.18489583333333334" />
+        <entry key="..\:/APPSach/app/src/main/res/drawable/ic_baseline_grade.xml" value="0.18489583333333334" />
+        <entry key="..\:/APPSach/app/src/main/res/drawable/ic_baseline_home.xml" value="0.17222222222222222" />
+        <entry key="..\:/APPSach/app/src/main/res/drawable/ic_baseline_search_24.xml" value="0.12407407407407407" />
+        <entry key="..\:/APPSach/app/src/main/res/drawable/ic_baseline_send_24.xml" value="0.17222222222222222" />
+        <entry key="..\:/APPSach/app/src/main/res/drawable/ic_baseline_settings.xml" value="0.17222222222222222" />
+        <entry key="..\:/APPSach/app/src/main/res/drawable/ic_baseline_share.xml" value="0.18489583333333334" />
+        <entry key="..\:/APPSach/app/src/main/res/drawable/ic_launcher_background.xml" value="0.17222222222222222" />
+        <entry key="..\:/APPSach/app/src/main/res/drawable/ic_search_black_24dp.xml" value="0.20052083333333334" />
+        <entry key="..\:/APPSach/app/src/main/res/layout/activity_download.xml" value="0.12364130434782608" />
+        <entry key="..\:/APPSach/app/src/main/res/layout/activity_download_fragment.xml" value="0.16666666666666666" />
+        <entry key="..\:/APPSach/app/src/main/res/layout/activity_lsu_fragment.xml" value="0.22" />
+        <entry key="..\:/APPSach/app/src/main/res/layout/activity_main.xml" value="0.3080513418903151" />
+        <entry key="..\:/APPSach/app/src/main/res/layout/activity_search.xml" value="0.1" />
+        <entry key="..\:/APPSach/app/src/main/res/layout/activity_search_fragment.xml" value="0.39323467230443976" />
+        <entry key="..\:/APPSach/app/src/main/res/layout/activity_test.xml" value="0.11639492753623189" />
+        <entry key="..\:/APPSach/app/src/main/res/layout/downloadfragment.xml" value="0.12364130434782608" />
+        <entry key="..\:/APPSach/app/src/main/res/layout/homefragment.xml" value="0.12364130434782608" />
+        <entry key="..\:/APPSach/app/src/main/res/layout/lichsufragment.xml" value="0.12364130434782608" />
+        <entry key="..\:/APPSach/app/src/main/res/layout/nav_header.xml" value="0.1" />
+        <entry key="..\:/APPSach/app/src/main/res/layout/noibatfragment.xml" value="0.12364130434782608" />
+        <entry key="..\:/APPSach/app/src/main/res/layout/settingfragment.xml" value="0.22" />
+        <entry key="..\:/APPSach/app/src/main/res/layout/switch_item.xml" value="0.1" />
+        <entry key="..\:/APPSach/app/src/main/res/layout/theloaifragment.xml" value="0.12364130434782608" />
+        <entry key="..\:/APPSach/app/src/main/res/layout/truyenhayfragment.xml" value="0.12364130434782608" />
+        <entry key="..\:/APPSach/app/src/main/res/menu/menu.xml" value="0.16875" />
+        <entry key="..\:/APPSach/app/src/main/res/menu/menu_search.xml" value="0.4466666666666667" />
+        <entry key="..\:/APPSach/app/src/main/res/menu/search.xml" value="0.16018518518518518" />
+        <entry key="..\:/APPSach/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.20052083333333334" />
+        <entry key="..\:/APPSach/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.20052083333333334" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="4dp">
+
+  <RelativeLayout
+      android:id="@+id/nav_header"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:background="@color/teal_200"
+      android:padding="10dp">
+
+    <ImageView
+        android:id="@+id/Trolai"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:src="@drawable/ic_baseline_keyboard_back" />
+
+    <TextView
+        android:id="@+id/Header1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="16dp"
+        android:layout_toEndOf="@+id/Trolai"
+        android:text="Tìm kiếm"
+        android:textColor="#000"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+  </RelativeLayout>
+
+  <TableRow
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_below="@+id/nav_header"
+      android:padding="4dp"
+      android:layout_marginTop="4dp">
+
+    <AutoCompleteTextView
+        android:id="@+id/EditText"
+        android:layout_width="319dp"
+        android:layout_height="62dp"
+        android:completionThreshold="1"
+        android:ems="10"
+        android:hint="Tìm kiếm "
+        android:padding="1dp" />
+
+    <Button
+        android:id="@+id/Ok"
+        android:layout_width="wrap_content"
+        android:layout_height="58dp"
+        android:layout_toEndOf="@+id/EditText"
+        android:backgroundTint="#Ccc"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        android:text="OK" />
+  </TableRow>
+
+</RelativeLayout>
