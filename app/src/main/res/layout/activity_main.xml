@@ -33,7 +33,7 @@
             <ImageView
                 android:id="@+id/Search"
                 android:padding="12dp"
-                android:layout_marginLeft="170dp"
+                android:layout_marginLeft="100dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:src="@drawable/ic_baseline_search_24" />
@@ -46,6 +46,16 @@
 
         </FrameLayout>
     </LinearLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/navigation_view"
+        app:headerLayout="@layout/nav_header"
+        app:menu="@menu/menu"
+        android:layout_gravity="start">
+    </com.google.android.material.navigation.NavigationView>
+
     <RelativeLayout  xmlns:hwads="http://schemas.android.com/apk/res-auto"
         android:id="@+id/root_view"
         android:layout_width="match_parent"
@@ -58,13 +68,4 @@
             hwads:adId="testw6vs28auh3"
             hwads:bannerSize="BANNER_SIZE_360_57"/>
     </RelativeLayout>
-    <com.google.android.material.navigation.NavigationView
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:id="@+id/navigation_view"
-        app:headerLayout="@layout/nav_header"
-        app:menu="@menu/menu"
-        android:layout_gravity="start">
-    </com.google.android.material.navigation.NavigationView>
-
 </androidx.drawerlayout.widget.DrawerLayout>

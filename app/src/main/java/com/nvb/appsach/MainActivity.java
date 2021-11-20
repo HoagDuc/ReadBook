@@ -1,31 +1,25 @@
 package com.nvb.appsach;
 
-import androidx.activity.result.contract.ActivityResultContracts;
+
 import androidx.annotation.NonNull;
-import androidx.appcompat.app.ActionBar;
+
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.SearchView;
+
 import androidx.appcompat.widget.Toolbar;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
-import androidx.navigation.NavController;
-import androidx.navigation.Navigation;
-import androidx.navigation.ui.AppBarConfiguration;
-import androidx.navigation.ui.NavigationUI;
 
-import android.app.Activity;
-import android.app.SearchManager;
-import android.content.Context;
+
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.ImageView;
+import android.widget.ListView;
 import android.widget.RelativeLayout;
 
 import com.google.android.material.navigation.NavigationView;
@@ -33,6 +27,9 @@ import com.huawei.hms.ads.AdParam;
 import com.huawei.hms.ads.BannerAdSize;
 import com.huawei.hms.ads.HwAds;
 import com.huawei.hms.ads.banner.BannerView;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
@@ -54,6 +51,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         rootView.addView(topBannerView);
 
 
+
         drawerLayout = findViewById(R.id.nav_view);
         Toolbar toolbar = findViewById(R.id.toolBar);
         NavigationView navigationView = findViewById(R.id.navigation_view);
@@ -70,8 +68,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             navigationView.getCheckedItem();
 
         }
-        replaceFragment(new HomeFragment());
-        navigationView.getMenu().findItem(R.id.Home).setChecked(true);
 
         ImageView imageView = findViewById(R.id.Search);
         imageView.setOnClickListener(new View.OnClickListener() {
@@ -83,12 +79,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 startActivity(intent);
             }
         });
-
-
-
-
-
-
     }
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
@@ -97,28 +87,24 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new HomeFragment()).commit();
                 break;
             case R.id.Noibat:
-                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new NoibatFragment()).commit();
+                startActivity(new Intent(MainActivity.this,NoiBat.class));
                 break;
             case R.id.Theloai:
-                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new TheloaiFragment()).commit();
+                startActivity(new Intent(MainActivity.this,TheLoai.class));
                 break;
             case R.id.Setting:
-                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new SettingFragment()).commit();
+                startActivity(new Intent(MainActivity.this, CaiDat.class));
                 break;
             case R.id.Download:
-                Intent intent = new Intent(this,DownloadFragment.class);
-                startActivity(intent);
+                startActivity(new Intent(MainActivity.this, DownloadFragment.class));
                 break;
             case R.id.Lichsu:
-                Intent intent1 = new Intent(this,LSuFragment.class);
-                startActivity(intent1);
+                startActivity(new Intent(MainActivity.this, LSuFragment.class));
                 break;
         }
         drawerLayout.closeDrawer(GravityCompat.START);
         return true;
-
     }
-
     @Override
     public void onBackPressed() {
         if(drawerLayout.isDrawerOpen(GravityCompat.START)){
@@ -127,11 +113,4 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             super.onBackPressed();
         }
     }
-    private void replaceFragment(Fragment fragment){
-        FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
-        transaction.replace(R.id.fragment_container,fragment);
-        transaction.commit();
-    }
-
-
 }

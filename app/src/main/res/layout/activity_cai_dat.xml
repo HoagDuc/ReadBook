@@ -1,28 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_margin="4dp">
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_margin="4dp"
+    tools:context=".CaiDat">
 
-    <TextView
-        android:id="@+id/header"
+    <RelativeLayout
+        android:id="@+id/nav_Caidat"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/teal_700"
-        android:padding="8dp"
-        android:text="Cài đặt"
-        android:layout_marginBottom="4dp"
-        android:textColor="#000"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        android:textAlignment="center"/>
+        android:background="@color/teal_200"
+        android:padding="10dp">
+
+        <ImageView
+            android:padding="8dp"
+            android:id="@+id/Trolai"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_keyboard_back" />
+
+        <TextView
+            android:id="@+id/toolbar_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="16dp"
+            android:layout_toEndOf="@+id/Trolai"
+            android:text="Cài đặt"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:textSize="20sp" />
+    </RelativeLayout>
 
     <TextView
         android:id="@+id/Dulieu"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/header"
+        android:layout_below="@+id/nav_Caidat"
+        android:layout_marginTop="4dp"
         android:background="#DC8787"
         android:fontFamily="monospace"
         android:padding="10dp"
