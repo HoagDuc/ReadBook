@@ -3,6 +3,7 @@ package com.nvb.appsach;
 
 import androidx.annotation.NonNull;
 
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -14,6 +15,7 @@ import androidx.fragment.app.FragmentTransaction;
 
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
@@ -22,6 +24,8 @@ import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.RelativeLayout;
 
+import com.github.appintro.AppIntro;
+import com.github.appintro.AppIntroFragment;
 import com.google.android.material.navigation.NavigationView;
 import com.huawei.hms.ads.AdParam;
 import com.huawei.hms.ads.BannerAdSize;
@@ -30,14 +34,16 @@ import com.huawei.hms.ads.banner.BannerView;
 
 import java.util.ArrayList;
 import java.util.List;
-
-public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
+//
+public class MainActivity  extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
     private DrawerLayout drawerLayout;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+
 
         HwAds.init(this);
         BannerView bottomBannerView = findViewById(R.id.hw_banner_view);
@@ -113,4 +119,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             super.onBackPressed();
         }
     }
+
+
+
+
 }
